@@ -1,0 +1,57 @@
+/* Buttons
+========================================================================== */
+
+  .standings {
+    --flow-space: var(--spacing-2xl);
+    font-size: var(--font-size-s);
+  }
+
+    .standings__grid {
+      display: grid;
+      gap: var(--spacing-2xl);
+      grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));
+    }
+
+  .group-table {
+    width: 100%;
+  }
+
+    .group-table thead {
+      color: var(--color-primary-100);
+    }
+
+      .group-table thead th {
+        border: 1px solid var(--color-primary-800);
+      }
+
+  .group-table th,
+  .group-table td {
+    border: 1px solid var(--color-primary-100);
+    padding: var(--spacing-base);
+    vertical-align: top;
+  }
+
+  .group-table th[scope=row] {
+    min-width: 12em;
+  }
+
+  .standings__team-wrapper {
+    display: flex;
+    align-items: end;
+    gap: var(--spacing-s);
+  }
+
+  .standings__team-details {
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+  }
+
+  .family-member {
+    display: inline-block;
+  }
+
+
+
+

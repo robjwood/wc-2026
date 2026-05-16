@@ -1,0 +1,43 @@
+---
+title: Standings
+---
+
+<div class="flow">
+  <div class="standings__grid">
+    {% for item in data.standings %}
+    <section class="standings flow">
+      <h2>{{ item.group }}</h2>
+      <table class="c-card group-table">
+        <thead class="c-card__header">
+          <tr>
+            <th>Team</th>
+            <th>Pld</th>
+            <th>GD</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for team in item.table %}
+          <tr class="standings__team" >
+            <th scope="row">
+              <div class="standings__team-details">
+                <div class="standings__team-wrapper">
+                  <img src="{{ team.crest }}" alt="Flag of {{ team.team }}" width="24" height="18" class="crest" />
+                  <span>{{ team.team }}</span>
+                </div>
+                <div class="standings__family-wrapper">
+                  <div class="family-member">{{ team.familyMember }}</div>
+                </div>
+              </div>
+            </th>
+            <td>{{ team.playedGames }}</td>
+            <td>{{ team.goalDifference }}</td>
+            <td>{{ team.points }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+    {% endfor %}
+  </div>
+</div>

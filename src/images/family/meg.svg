@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="blank-face" x="0" y="0" width="21" height="21" style="fill:none;"/>
+    <g id="blank-face1" serif:id="blank-face">
+        <g id="face-shade">
+            <g transform="matrix(1,0,0,1,9,15)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(119,55,8);"/>
+            </g>
+            <g transform="matrix(1,0,0,1,6,18)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(144,66,9);"/>
+            </g>
+            <g transform="matrix(1,0,0,1,3,18)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(184,85,12);"/>
+            </g>
+            <g transform="matrix(1,0,0,1,1.77636e-15,18)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(211,97,13);"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-3,15)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(240,115,22);"/>
+            </g>
+            <g transform="matrix(1,0,0,4,9,3)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(192,89,12);"/>
+            </g>
+        </g>
+        <g id="face-pale">
+            <g transform="matrix(1,0,0,4,-3,3)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(242,132,51);"/>
+            </g>
+            <g transform="matrix(1,0,0,4,-3,3)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(242,132,51);"/>
+            </g>
+            <g transform="matrix(3,0,0,6,-12,0)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(242,132,51);"/>
+            </g>
+        </g>
+        <g id="head-shade1">
+            <g transform="matrix(1,0,0,1,6,0)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(144,66,9);"/>
+            </g>
+            <g transform="matrix(1,0,0,1,3,0)">
+                <rect x="6" y="0" width="3" height="3" style="fill:rgb(184,85,12);"/>
+            </g>
+            <rect x="6" y="0" width="3" height="3" style="fill:rgb(211,97,13);"/>
+        </g>
+        <g id="eyes">
+            <g transform="matrix(1,0,0,1,3,15)">
+                <rect x="6" y="0" width="3" height="3"/>
+            </g>
+            <g transform="matrix(1,0,0,1,0,9)">
+                <rect x="6" y="0" width="3" height="3" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,6,9)">
+                <rect x="6" y="0" width="3" height="3" style="fill:white;"/>
+            </g>
+        </g>
+        <g id="meg" transform="matrix(3,0,0,2,-12,0)">
+            <path d="M4,10.5L4,3L5,3L5,1.5L6,1.5L6,0L9,0L9,1.5L10,1.5L10,3L11,3L11,10.5L9,10.5L9,9L10,9L10,4.5L9,4.5L9,3L6,3L6,4.5L5,4.5L5,9L6,9L6,10.5L4,10.5Z" style="fill:rgb(231,104,0);"/>
+        </g>
+    </g>
+</svg>

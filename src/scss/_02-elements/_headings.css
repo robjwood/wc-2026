@@ -1,0 +1,41 @@
+/* HEADINGS
+===========================================
+===========================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--white);
+  font-family: var(--font-accent);
+  line-height: var(--line-height-xs);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 700;
+
+  /*
+  font-variation-settings: 
+    "slnt" 0,
+    "wdth" 120,
+    "GRAD" -200,
+  */
+  }
+
+h2 {
+  font-size: var(--font-size-l);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--font-size-base);
+}
+
+h4 {
+  font-size: var(--font-size-s);
+}

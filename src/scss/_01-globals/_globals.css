@@ -1,0 +1,28 @@
+/* GLOBALS
+===========================================
+===========================================*/
+
+body {
+  background-color: var(--color-primary-500);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  font-optical-sizing: auto;
+  font-size: var(--font-size-base);
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1.5em);
+}
+
+:is(h1, h2, h3, blockquote) {
+  --flow-space: 1em;
+}
+
+:is(h1, h2, h3) + * {
+  --flow-space: 1em;
+}
+
+.crest {
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.8);
+  border-radius: var(--spacing-3xs);
+}

@@ -1,0 +1,21 @@
+/* Buttons
+========================================================================== */
+
+  .family-member {
+    background: var(--grey-200);
+    border-radius: var(--spacing-xs);
+    font-size: var(--font-size-xs);
+    font-weight: normal;
+    line-height: 1;
+    padding: var(--spacing-2xs) var(--spacing-xs);
+  }
+
+  .family-lozenge {
+    display: flex;
+    align-items: center;
+    background: var(--grey-200);
+    border-radius: var(--spacing-base);
+    padding: var(--spacing-2xs) var(--spacing-s);
+  }
+
+
