@@ -2,19 +2,4 @@
 title: Top scorers
 ---
 
-<section class="flow">
-  <table class="c-card group-table">
-    <thead class="c-card__header">
-      <tr>
-        <th>Name</th>
-        <th>Goals</th>
-        <th>Assists</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for item in data.topScorers %}
-        {% include "topScorers.njk" %}
-      {% endfor %}
-    </tbody>
-  </table>
-</section>
+<section class="flow" id="scorers-root"></section>

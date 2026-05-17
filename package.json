@@ -1,11 +1,11 @@
 {
   "name": "euro2024sweepstake",
   "version": "1.0.0",
-  "description": "Euro 2024 sweepstake",
+  "description": "World Cup 2026 sweepstake",
   "main": "index.html",
   "scripts": {
     "watch:sass": "sass --no-source-map --watch src/scss:public/css",
-    "watch:eleventy": "eleventy --serve",
+    "watch:eleventy": "eleventy --serve --port=8081",
     "build:sass": "sass --no-source-map src/scss:public/css",
     "build:eleventy": "eleventy",
     "start": "npm-run-all --parallel watch:*",

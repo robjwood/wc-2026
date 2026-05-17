@@ -1,7 +1,7 @@
 module.exports = {
   logo: [
     {
-      text: 'Euro 2024',
+      text: 'World Cup 2026',
       url: '/'
     },
   ],

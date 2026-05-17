@@ -17,7 +17,7 @@
 
               {% if match.homeTeam != 'TBC' %}
               <div class="family-lozenge">
-                <img src="/images/family/{{ match.familyMemberHome }}.svg" width="16" height="16" class="family-icon">
+                <img src="/images/family/{{ match.familyMemberHome | lower }}.svg" width="16" height="16" class="family-icon">
                 <p class="family-member">{{ match.familyMemberHome }}</p> 
               </div>  
               {% endif %}
@@ -36,7 +36,7 @@
 
               {% if match.awayTeam != 'TBC' %}
               <div class="family-lozenge">
-                <img src="/images/family/{{ match.familyMemberAway }}.svg" width="16" height="16" class="family-icon">
+                <img src="/images/family/{{ match.familyMemberAway | lower }}.svg" width="16" height="16" class="family-icon">
                 <p class="family-member">{{ match.familyMemberAway }}</p>
               </div>
               {% endif %}

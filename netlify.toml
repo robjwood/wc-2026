@@ -2,6 +2,16 @@
   command = "npm run build"
   publish = "public"
 
+[dev]
+  command = "npm start"
+  port = 8888
+  targetPort = 8081
+
+[[redirects]]
+  from = "/api/football"
+  to = "/.netlify/functions/football"
+  status = 200
+
 [[plugins]]
 package = "netlify-plugin-cache"
 
