@@ -1,0 +1,55 @@
+---
+layout: base.njk
+---
+
+<header>
+  {% block navPrimary %}
+    {% include "navPrimary.njk" %}
+  {% endblock %}
+
+  <div class="colour-banner">
+    <span class="green">&nbsp;</span>
+    <span class="crimson">&nbsp;</span>
+    <span class="yellow">&nbsp;</span>
+    <span class="blue">&nbsp;</span>
+    <span class="black">&nbsp;</span>
+    <span class="white">&nbsp;</span>
+
+
+    <span class="green">&nbsp;</span>
+    <span class="red">&nbsp;</span>
+    <span class="blue">&nbsp;</span>
+    <span class="yellow">&nbsp;</span>
+    <span class="white">&nbsp;</span>
+    <span class="green">&nbsp;</span>
+
+
+    <span class="yellow">&nbsp;</span>
+    <span class="crimson">&nbsp;</span>
+    <span class="black">&nbsp;</span>
+    <span class="green">&nbsp;</span>
+    <span class="white">&nbsp;</span>
+    <span class="red">&nbsp;</span>
+    <span class="blue">&nbsp;</span>
+    <span class="white">&nbsp;</span>
+    <span class="red">&nbsp;</span>
+    <span class="yellow">&nbsp;</span>
+    <span class="black">&nbsp;</span>
+    <span class="yellow">&nbsp;</span>
+
+
+  </div>
+</header>
+
+<main>
+{% block main %}
+
+  <article class="o-wrapper">
+    {{ content | safe }}
+  </article>
+{% endblock %}
+</main>
+
+{% block footer %}
+  {# {% include "partials/footer.njk" %} #}
+{% endblock %}

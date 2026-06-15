@@ -1,0 +1,96 @@
+/* VARIABLES
+===========================================
+
+===========================================*/
+
+:root {
+  /* Spacing
+  ----------------------------------------- */
+  --spacing-3xs: 0.1rem;  
+  --spacing-2xs: 0.18rem;  
+  --spacing-xs: 0.3rem;    
+  --spacing-s: 0.5rem;      
+  --spacing-base: 1rem;      
+  --spacing-l: 1.5rem;      
+  --spacing-xl: 2rem;    
+  --spacing-2xl: 3rem;  
+  --spacing-3xl: 4rem;  
+
+
+  /* Flow space */
+  --flow-space: 1.5em;
+
+  /* Border radius */
+  --border-radius-xs: var(--spacing-xs);
+  --border-radius-s: var(--spacing-s);
+  --border-radius: var(--spacing-base);
+
+  /* Typography
+  ----------------------------------------- */
+  --font-base: 'Silkscreen', sans-serif;
+  --font-accent: 'Press Start 2P', system-ui;
+  --measure: 84ch;
+
+  // https://www.fluid-type-scale.com/calculate?minFontSize=16&minWidth=400&minRatio=1.067&maxFontSize=18&maxWidth=1200&maxRatio=1.125&steps=xs%2Cs%2Cbase%2Cl%2Cxl%2C2xl%2C3xl%2C4xl%2C5xl&baseStep=base&prefix=font-size&useContainerWidth=true&includeFallbacks=true&useRems=true&remValue=16&decimals=2&previewFont=Silkscreen&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=400
+
+
+  --font-size-xs: clamp(0.88rem, 0.02cqi + 0.87rem, 0.89rem);
+  --font-size-s: clamp(0.94rem, 0.13cqi + 0.91rem, 1rem);
+  --font-size-base: clamp(1rem, 0.25cqi + 0.94rem, 1.13rem);
+  --font-size-l: clamp(1.07rem, 0.4cqi + 0.97rem, 1.27rem);
+  --font-size-xl: clamp(1.14rem, 0.57cqi + 1rem, 1.42rem);
+  --font-size-2xl: clamp(1.21rem, 0.77cqi + 1.02rem, 1.6rem);
+  --font-size-3xl: clamp(1.3rem, 1.01cqi + 1.04rem, 1.8rem);
+  --font-size-4xl: clamp(1.38rem, 1.29cqi + 1.06rem, 2.03rem);
+  --font-size-5xl: clamp(1.48rem, 1.61cqi + 1.07rem, 2.28rem);
+
+  --line-height-xs:     1.1;
+  --line-height-normal: 1.5;
+
+
+
+
+  /* Colours
+  ----------------------------------------- */
+  --white:              hsla(0,0%,100%,1);
+
+  --grey-100:           hsla(214,10%,96%,1);  
+  --grey-200:           hsla(214,10%,94%,1);
+  --grey-300:           hsla(214,10%,85%,1);
+  --grey-400:           hsla(214,10%,70%,1);
+  --grey-500:           hsla(214,10%,50%,1);
+  --grey-600:           hsla(214,10%,45%,1);
+  --grey-700:           hsla(214,10%,40%,1);
+  --grey-800:           hsla(214,10%,30%,1);
+  --grey-900:           hsla(214,15%,20%,1);
+
+  --black:              hsla(0,0%,10%,1);       
+
+  --positive:           hsla(120,75%,25%,1);
+  --positiveLight:      hsla(120,75%,90%,1);
+  
+  --caution:            hsla(45,75%,50%,1);
+  --cautionLight:       hsla(45,75%,90%,1);
+  --negative:           hsla(0,75%,50%,1);
+  --negativeLight:      hsla(0,75%,90%,1);  
+  --neutral:            hsla(200,40%,35%,1);
+  --neutralLight:       hsla(200,40%,90%,1);
+
+  
+
+  --color-primary-100:  hsl(228 83% 98% / 1);
+  --color-primary-200:  hsl(228 83% 96% / 1);
+  --color-primary-300:  hsl(228 83% 70% / 1);
+  --color-primary-400:  hsl(228 83% 60% / 1);
+  --color-primary-500:  hsl(228 83% 50% / 1);
+  --color-primary-600:  hsl(228 83% 30% / 1);
+  --color-primary-700:  hsl(228 83% 15% / 1);
+  --color-primary-800:  hsl(228 83% 10% / 1);
+  --color-primary-900:  hsl(228 83% 5% / 1);
+
+  --yellow: #F7CE43;
+  --crimson: #EA3323;
+  --green: #01BA5D ;
+  --red: #FE0000;
+  --blue: #143CDA;
+}

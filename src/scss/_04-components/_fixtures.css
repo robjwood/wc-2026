@@ -1,0 +1,95 @@
+/* Buttons
+========================================================================== */
+
+.fixture {
+  --flow-space: var(--spacing-3xl);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+}
+
+.fixture h2 {
+  width: 12em;
+}
+
+
+.fixture__wrapper {
+  --flow-space: var(--spacing-xl);
+}
+
+
+    .fixture__details {
+      display: flex;
+      gap: var(--spacing-xs);
+      flex-direction: column;
+    }
+
+    .fixture__details.results {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .fixture__details.results .fixture__info {
+      flex-direction: initial;
+      justify-content: center;
+      padding: var(--spacing-s);
+    }
+
+    .fixture__teams {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: start;
+      gap: var(--spacing-base);
+    }
+
+    .fixture__info {
+      --flow-space: var(--spacing-xs);
+      color: var(--grey-500);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--spacing-s);
+      line-height: 1;
+    }
+    
+
+      .fixture__stage {
+      }
+
+      .fixture__time {
+      }
+
+      .fixture__team {
+        display: flex;
+        align-items: center;
+      }
+
+        .fixture__team-details {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-xs);
+        }
+
+      .fixture__family-team {
+        display: flex;
+        gap: var(--spacing-xs);
+      }
+
+    .fixture__home {
+      display: flex;
+      justify-content: flex-end;
+      gap: var(--spacing-base);
+    }
+
+    .fixture__away {
+      display: flex;
+      justify-content: flex-start;
+      gap: var(--spacing-base);
+    }
+
+    .fixture__vs {
+      text-align: center;
+    }
+
+    .fixture__score {
+    }

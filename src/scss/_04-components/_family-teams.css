@@ -1,0 +1,41 @@
+/* Family teams
+========================================================================== */
+
+  .family-teams__wrapper {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(198px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(calc(var(--spacing-3xl) * 4), 1fr));
+    gap: var(--spacing-l);
+  }
+
+    .family-teams__details {
+      background-color: var(--positive);
+      padding-inline: var(--spacing-base);
+      padding-block: var(--spacing-l);
+
+      border-top: 3px solid oklch(from var(--positive) calc(l * 1.3) c h);
+      border-left: 3px solid oklch(from var(--positive) calc(l * 1.3) c h);
+      border-right: 3px solid oklch(from var(--positive) calc(l * .7) c h);
+      border-bottom: 3px solid oklch(from var(--positive) calc(l * .7) c h);
+
+    }
+
+      .family-teams__member {
+        display: flex;
+        align-items: flex-end;
+        gap: var(--spacing-base);
+      }
+
+        .family-teams__title {
+          color: var(--grey-100);
+          font-family: var(--font-accent);
+          font-weight: normal;
+        }
+
+
+
+    .family-teams__team {
+      display: flex;
+      gap: var(--spacing-s);
+    }
+

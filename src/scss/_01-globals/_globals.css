@@ -1,0 +1,38 @@
+/* GLOBALS
+===========================================
+===========================================*/
+
+body {
+  background: repeat center top/100% url("/images/bg.png");
+  backdrop-filter: blur(4px);
+  background-color: var(--grey-900);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  font-optical-sizing: auto;
+  font-size: var(--font-size-l);
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1.5em);
+}
+
+:is(h1, h2, h3, blockquote) {
+  --flow-space: 1em;
+}
+
+:is(h1, h2, h3) + * {
+  --flow-space: 1em;
+}
+
+.crest {
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.8);
+  border-radius: var(--spacing-3xs);
+}
+
+.family-icon {
+  filter: drop-shadow(3px 3px 0px var(--grey-900));
+}
+
+p {
+  text-shadow: 3px 3px 0 var(--grey-900);
+}

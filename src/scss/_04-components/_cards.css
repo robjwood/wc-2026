@@ -1,0 +1,18 @@
+/* CARDS
+===========================================
+===========================================*/
+
+.c-card {
+  line-height: 1;
+}
+
+  .c-card__header {
+    background-color: var(--color-primary-700);
+    padding-inline: var(--spacing-l);
+    padding-block: var(--spacing-base);
+  }
+
+
+  .c-card__title {
+    font-size: var(--font-size-l);
+  }

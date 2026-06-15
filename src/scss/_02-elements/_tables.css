@@ -1,0 +1,16 @@
+/* TABLES
+===========================================
+===========================================*/
+
+table {
+  border-spacing: var(--spacing-xs);
+}
+
+  th, td {
+    padding: var(--spacing-s);
+    vertical-align: top;
+  }  
+
+  th {
+    text-align: left;
+  }
