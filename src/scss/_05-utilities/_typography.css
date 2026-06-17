@@ -3,5 +3,5 @@
 ===========================================*/
 
 .text-shadow {
-  text-shadow: 3px 3px 0 var(--grey-900);
+  text-shadow: 3px 3px 0 var(--black);
 }

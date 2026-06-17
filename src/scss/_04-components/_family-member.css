@@ -10,8 +10,12 @@
   .family-lozenge {
     display: flex;
     align-items: center;
-    padding: var(--spacing-2xs) var(--spacing-s);
-    display: none;
+    gap: var(--spacing-2xs);
+    padding-block: var(--spacing-2xs);
+  }
+
+  .family-lozenge--reversed {
+    /* flex-direction: row-reverse; */
   }
 
 

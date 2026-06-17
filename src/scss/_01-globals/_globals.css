@@ -30,9 +30,9 @@ body {
 }
 
 .family-icon {
-  filter: drop-shadow(3px 3px 0px var(--grey-900));
+  filter: drop-shadow(3px 3px 0px var(--black));
 }
 
 p {
-  text-shadow: 3px 3px 0 var(--grey-900);
+  text-shadow: 3px 3px 0 var(--black);
 }

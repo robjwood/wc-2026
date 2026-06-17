@@ -14,16 +14,16 @@ async function fetchData(type) {
   return res.json();
 }
 
-function teamBlock(name, crest, familyMember) {
+function teamBlock(name, crest, familyMember, reversed = false) {
   if (name === 'TBC') return '';
-  return `
-    <div class="fixture__team-details">
-      <p>${esc(name)}</p>
-    </div>
+  const nameEl = `<p>${esc(name)}</p>`;
+  const avatarEl = `<img src="/images/family/${esc(familyMember.toLowerCase())}.svg" width="16" height="16" class="family-icon">`;
+  const memberEl = `<p class="family-member">${esc(familyMember)}</p>`;
+  const lozengeEl = `
     <div class="family-lozenge">
-      <img src="/images/family/${esc(familyMember.toLowerCase())}.svg" width="16" height="16" class="family-icon">
-      <p class="family-member">${esc(familyMember)}</p>
+      ${reversed ? memberEl + avatarEl : avatarEl + memberEl}
     </div>`;
+  return nameEl + lozengeEl;
 }
 
 function renderFixtures(data) {
@@ -42,15 +42,11 @@ function renderFixtures(data) {
             </div>` : ''}
           <div class="fixture__teams">
             <div class="fixture__home">
-              <div class="fixture__team">
-                ${teamBlock(m.homeTeam, m.homeTeamCrest, m.familyMemberHome)}
-              </div>
+              ${teamBlock(m.homeTeam, m.homeTeamCrest, m.familyMemberHome, true)}
             </div>
             <span class="fixture__vs">v</span>
             <div class="fixture__away">
-              <div class="fixture__team">
-                ${teamBlock(m.awayTeam, m.awayTeamCrest, m.familyMemberAway)}
-              </div>
+              ${teamBlock(m.awayTeam, m.awayTeamCrest, m.familyMemberAway)}
             </div>
           </div>
       </div>`).join('')}
@@ -181,7 +177,9 @@ async function init(id, type, renderer) {
   }
 }
 
-init('fixtures-root',  'fixtures',  renderFixtures);
-init('results-root',   'results',   renderResults);
-init('standings-root', 'standings', renderStandings);
-init('scorers-root',   'scorers',   renderScorers);
+init('fixtures-root',      'fixtures', renderFixtures);
+init('results-root',       'results',  renderResults);
+init('standings-root',     'standings', renderStandings);
+init('scorers-root',       'scorers',  renderScorers);
+init('home-fixtures-root', 'fixtures', data => renderFixtures(data.slice(0, 1)));
+init('home-scorers-root',  'scorers',  data => renderScorers(data.slice(0, 5)));
