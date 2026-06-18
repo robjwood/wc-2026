@@ -68,21 +68,11 @@ function renderResults(data) {
             </div>
             <div class="fixture__teams">
               <div class="fixture__home">
-                <div class="fixture__team">
-                  <p>${esc(m.homeTeam)}</p>
-                </div>
-                <p class="fixture__score">${esc(m.scoreHomeTeam)}</p>
+                ${teamBlock(m.homeTeam, m.homeTeamCrest, m.familyMemberHome, true)}
               </div>
-              <span class="fixture__vs">v</span>
+              <span class="fixture__vs">${esc(m.scoreHomeTeam)}–${esc(m.scoreAwayTeam)}</span>
               <div class="fixture__away">
-                <p class="fixture__score">${esc(m.scoreAwayTeam)}</p>
-                <div class="fixture__team">
-                  <p>${esc(m.awayTeam)}</p>
-                  <div class="family-lozenge">
-                    <img src="/images/family/${esc(m.familyMemberAway.toLowerCase())}.svg" width="16" height="16" class="family-icon">
-                    <p class="family-member">${esc(m.familyMemberAway)}</p>
-                  </div>
-                </div>
+                ${teamBlock(m.awayTeam, m.awayTeamCrest, m.familyMemberAway)}
               </div>
             </div>
           </div>`).join('')}
@@ -106,9 +96,8 @@ function renderStandings(data) {
                 <th>W</th>
                 <th>D</th>
                 <th>L</th>
-                <th>F</th>
-                <th>A</th>
-                <th>Pts</th>
+                <th>GD</th>
+                <th>P</th>
               </tr>
             </thead>
             <tbody>
@@ -128,8 +117,7 @@ function renderStandings(data) {
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td>${esc(team.goalsFor)}</td>
-                  <td>${esc(team.goalsAgainst)}</td>
+                  <td>${esc(team.goalDifference)}</td>
                   <td>${esc(team.points)}</td>
                 </tr>`).join('')}
             </tbody>

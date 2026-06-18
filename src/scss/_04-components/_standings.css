@@ -30,7 +30,7 @@
   }
 
   .group-table th[scope=row] {
-    min-width: 12em;
+    min-width: 9em;
   }
 
   th[scope=row] {
