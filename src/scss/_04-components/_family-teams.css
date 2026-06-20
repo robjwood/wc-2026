@@ -3,8 +3,7 @@
 
   .family-teams__wrapper {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(198px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(calc(var(--spacing-3xl) * 4), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(var(--spacing-3xl) * 5), 1fr));
     gap: var(--spacing-l);
   }
 

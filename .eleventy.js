@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/components");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy("manifest.json");
   eleventyConfig.addPassthroughCopy("service-worker.js");
   eleventyConfig.addPassthroughCopy("favicon.ico");
