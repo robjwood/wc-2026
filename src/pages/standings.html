@@ -2,4 +2,7 @@
 title: Standings
 ---
 
-<div class="flow" id="standings-root"></div>
+<football-standings class="flow">
+  <p class="loading">Loading standings…</p>
+  {% include "templates/standings-templates.njk" %}
+</football-standings>

@@ -36,6 +36,7 @@
 
     .family-teams__team {
       display: flex;
+      align-items: center;
       gap: var(--spacing-s);
     }
 

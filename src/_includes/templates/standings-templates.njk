@@ -1,0 +1,41 @@
+<template data-template="group">
+  <section class="standings flow">
+    <h2 data-field="group"></h2>
+    <table class="c-card group-table">
+      <thead class="c-card__header">
+        <tr>
+          <th>Team</th>
+          <th>Pl</th>
+          <th>W</th>
+          <th>D</th>
+          <th>L</th>
+          <th>GD</th>
+          <th>P</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+</template>
+
+<template data-template="row">
+  <tr class="standings__team">
+    <th scope="row">
+      <div class="standings__team-details">
+        <div class="standings__team-wrapper">
+          <img data-field="crest" src="" alt="" width="24" height="18" class="crest">
+          <span data-field="team"></span>
+        </div>
+        <div class="standings__family-wrapper">
+          <family-member data-field="familyMember"></family-member>
+        </div>
+      </div>
+    </th>
+    <td data-field="playedGames"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td data-field="goalDifference"></td>
+    <td data-field="points"></td>
+  </tr>
+</template>

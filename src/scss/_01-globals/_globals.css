@@ -2,6 +2,13 @@
 ===========================================
 ===========================================*/
 
+football-fixtures,
+football-results,
+football-standings,
+football-scorers {
+  display: block;
+}
+
 body {
   background: repeat center top/100% url("/images/bg.png");
   backdrop-filter: blur(4px);
@@ -25,12 +32,11 @@ body {
 }
 
 .crest {
-  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.8);
-  border-radius: var(--spacing-3xs);
+  box-shadow: 3px 3px 0 var(--black);
 }
 
 .family-icon {
-  filter: drop-shadow(3px 3px 0px var(--black));
+  filter: drop-shadow(3px 3px 0 var(--black));
 }
 
 p {

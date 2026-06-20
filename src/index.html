@@ -7,11 +7,16 @@ layout: page.njk
 <div class="grid-2-col">
   <div class="flow">
     <h2>Next fixtures</h2>
-    <div id="home-fixtures-root"></div>
+    <football-fixtures limit="1">
+      <p class="loading">Loading fixtures…</p>
+    </football-fixtures>
   </div>
 
   <div class="flow">
     <h2>Top scorers</h2>
-    <div id="home-scorers-root"></div>
+    <football-scorers limit="5">
+      <p class="loading">Loading top scorers…</p>
+      {% include "templates/scorers-templates.njk" %}
+    </football-scorers>
   </div>
 </div>

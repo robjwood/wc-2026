@@ -2,4 +2,7 @@
 title: Top scorers
 ---
 
-<section class="flow" id="scorers-root"></section>
+<football-scorers class="flow">
+  <p class="loading">Loading top scorers…</p>
+  {% include "templates/scorers-templates.njk" %}
+</football-scorers>

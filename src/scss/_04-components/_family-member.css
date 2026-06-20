@@ -1,21 +1,12 @@
-/* Buttons
-========================================================================== */
+.family-member {
+  font-size: var(--font-size-xs);
+  font-weight: normal;
+  line-height: 1;
+}
 
-  .family-member {
-    font-size: var(--font-size-xs);
-    font-weight: normal;
-    line-height: 1;
-  }
-
-  .family-lozenge {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-2xs);
-    padding-block: var(--spacing-2xs);
-  }
-
-  .family-lozenge--reversed {
-    /* flex-direction: row-reverse; */
-  }
-
-
+family-member {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding-block: var(--spacing-2xs);
+}
