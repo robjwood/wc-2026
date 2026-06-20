@@ -10,8 +10,9 @@ h5,
 h6 {
   color: var(--white);
   font-weight: 400;
-  text-shadow: 3px 3px 0 var(--black);
   line-height: var(--line-height-xs);
+  text-shadow: 3px 3px 0 var(--black);
+  text-transform: uppercase;
 }
 
 h1 {

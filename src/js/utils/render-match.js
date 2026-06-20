@@ -20,7 +20,7 @@ export function renderMatchDay({ date, matches }, { showTime = false, showScore 
                 ${teamBlock(m.homeTeam, m.homeTeamCrest, m.familyMemberHome, true)}
               </div>
               <span class="fixture__vs">
-                ${showScore ? `${esc(m.scoreHomeTeam)}–${esc(m.scoreAwayTeam)}` : 'v'}
+                ${showScore ? `${esc(m.scoreHomeTeam)} - ${esc(m.scoreAwayTeam)}` : 'v'}
               </span>
               <div class="fixture__away">
                 ${teamBlock(m.awayTeam, m.awayTeamCrest, m.familyMemberAway)}
