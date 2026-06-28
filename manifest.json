@@ -1,8 +1,8 @@
 {
   "name": "World Cup 2026 Sweepstake",
   "short_name": "Sweepstake",
-  "id": "index.html",
-  "start_url": "index.html",
+  "id": "/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "hsl(228 83% 50% / 1)",
   "theme_color": "hsl(228 83% 50% / 1)",
